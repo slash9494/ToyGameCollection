@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="./turningBottle.js"></script>
+    <title>돌려돌려</title>
+    <style>
+        body {
+            background-color: #f5f5f5;
+            position: relative;
+        }
+
+        .btn_container {
+            width: 100vw;
+            display: flex;
+            height: 10vh;
+            justify-content: center;
+            align-items: flex-start;
+            position: relative;
+            z-index: 1;
+        }
+
+        .btn {
+            width: 30vw;
+            height: 10vh;
+            padding: 10px;
+            color: salmon;
+            font-weight: bold;
+            background-color: gray;
+            border-radius: 10px;
+            font-size: 3vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .btn_switched {
+            width: 30vw;
+            height: 10vh;
+            padding: 10px;
+            color: salmon;
+            font-weight: bold;
+            background-color: blue;
+            border-radius: 10px;
+            font-size: 3vw;
+            display: none;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .turning_plate {
+            width: 100vw;
+            height: calc(100vh - 10vh);
+            display: flex;
+            justify-content: center;
+        }
+
+        .bottle {
+            transition: transform 10000ms cubic-bezier(0.315, -0.600, 0.420, 1.035);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="btn_container"> <button type="button" class='btn'>
+            돌려돌려!
+        </button><button type="button" class='btn_switched'>
+            돌려돌려!
+        </button></div>
+    <div class="turning_plate">
+        <img src="./soju.jpg" class="bottle" />
+    </div>
+
+
+</body>
+
+</html>
