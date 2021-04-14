@@ -1,2 +1,2 @@
-# Enjoy simple games🎮
+# Toy Projects Collection🤖
 
